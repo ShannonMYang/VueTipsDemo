@@ -1,7 +1,7 @@
 <!--
  * @Author: ShannonMYang
  * @Date: 2020-03-19 16:24:08
- * @LastEditTime: 2020-03-19 17:49:13
+ * @LastEditTime: 2020-04-01 18:10:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-echarts\src\components\LineChart.vue
@@ -13,6 +13,12 @@
 <script>
     export default {
         name: "LineChart",
+        data() {
+            return {
+                xData: [],
+                yData: []
+            }
+        },
         methods: {
             drawLine() {
                 // 基于准备好的dom，初始化echarts实例
@@ -26,13 +32,13 @@
                     xAxis: {
                         type: 'category',
                         boundaryGap: false,
-                        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                        data: this.xData
                     },
                     yAxis: {
                         type: 'value'
                     },
                     series: [{
-                        data: [820, 932, 1578, 632, 1290, 321, 753],
+                        data: this.yData,
                         type: 'line',
                         smooth: true,
                         lineStyle: {

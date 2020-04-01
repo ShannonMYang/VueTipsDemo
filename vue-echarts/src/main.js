@@ -1,7 +1,7 @@
 /*
  * @Author: ShannonMYang
  * @Date: 2020-03-19 15:51:34
- * @LastEditTime: 2020-03-19 16:22:22
+ * @LastEditTime: 2020-04-01 17:09:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-echarts\src\main.js
@@ -19,6 +19,14 @@ import echarts from "echarts";
 import "echarts/map/js/china.js"
 import "echarts/map/js/world.js"
 Vue.prototype.$echarts = echarts;
+
+// 全局引入加载组件
+import Loading from "@/components/Loading.vue";
+Vue.component("Loading", Loading);
+
+// 引入网络请求
+import http from '@/http.js'
+Vue.prototype.$http = http
 
 new Vue({
   router,
