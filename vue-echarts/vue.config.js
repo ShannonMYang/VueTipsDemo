@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-02 10:11:31
- * @LastEditTime: 2020-04-02 10:44:25
+ * @LastEditTime: 2020-04-02 18:10:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-echarts\vue.config.js
@@ -10,10 +10,10 @@
 const path = require('path')
 const debug = process.env.NODE_ENV !== 'production'
 
-const data = require('./public/json');
+const data = require('./public/json/test');
 
 module.exports = {
-    baseUrl: '/', // 根域上下文目录
+    //baseUrl: '/', // 根域上下文目录
     outputDir: 'dist', // 构建输出目录
     assetsDir: 'assets', // 静态资源目录 (js, css, img, fonts)
     // 静态资源加载；
