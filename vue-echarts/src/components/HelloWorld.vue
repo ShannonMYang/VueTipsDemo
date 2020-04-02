@@ -74,11 +74,10 @@ export default {
     getLocalData() {
       this.$http({
         method: "GET",
-        url: "http://localhost:8080/src/json/test.json"
+        url: "http://localhost:8080/json/test.json"
       }).then(
         response => {
           console.log(response);
-          this.drawLine();
         },
         err => {
           //

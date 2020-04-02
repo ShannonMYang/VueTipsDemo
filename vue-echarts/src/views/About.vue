@@ -1,13 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2020-03-19 15:51:34
- * @LastEditTime: 2020-03-19 16:57:43
+ * @LastEditTime: 2020-04-02 14:55:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-echarts\src\views\About.vue
  -->
 <template>
   <div class="line-div">
+    <Loading />
     <h1>This is an LineChart page!!!</h1>
     <div class="line-chart">
       <LineChart></LineChart>

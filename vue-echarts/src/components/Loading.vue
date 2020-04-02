@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-01 16:16:28
- * @LastEditTime: 2020-04-01 18:24:10
+ * @LastEditTime: 2020-04-02 16:48:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-echarts\src\components\Loading.vue
  -->
 <template>
-  <div class="loader" v-if="isLoading">
+  <div class="loader" v-if="this.$store.state.isLoading">
     <div class="loader-inner">
       <div class="loader-line-wrap">
         <div class="loader-line"></div>
@@ -33,7 +33,7 @@ export default {
     name: "Loading",
     data() {
         return {
-          isLoading: 'true',
+          
         }
     },
     methods: {
